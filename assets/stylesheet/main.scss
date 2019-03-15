@@ -1,0 +1,416 @@
+// css reset
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+// main css
+button, input {
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+a {
+	color: dodgerblue;
+	text-decoration: none;
+}
+
+button, a {
+	cursor: pointer;
+}
+
+.primary-header {
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	h1 {
+			font-size: 30px;
+		}
+
+	.fa-reddit {
+		padding: 0 10px;
+		color: #FF5733;
+	}
+
+
+	.Search-box {
+		border-radius: 5px;
+		border: 1px solid rgba(174, 182, 191, 0.2);
+		padding: 5px 8px;
+		width: 800px;
+
+		.main-input {
+			padding-left: 10px; 
+			font-size: 20px;
+		}
+	}
+	
+	.Search-box:hover {
+		border-color: dodgerblue;
+	}
+
+
+	.small-srch-box {
+		display: flex;
+		padding: 0 5px;
+		border: 1px solid #fff;
+		align-items: center;
+		border-radius: 3px;
+
+		.zSeAY {
+			fill: #fff;
+			border-radius: 50%;
+			padding: 5px;
+			border: 3px solid #fff;
+			background: dodgerblue;
+		}
+
+		.input {
+			font-size: 20px;
+			color: #000;
+		}
+		.input::-webkit-input-placeholder {
+			color: #000;
+		}
+	}
+
+	.small-srch-box:hover {
+		border-color: rgba(174, 182, 191, 0.2);
+	}
+
+	.btn {
+		padding: 5px 8px ;
+		border: 1px solid dodgerblue;
+		border-radius: 3px;
+		color: #fff;
+		font-size: 16px;
+	}
+
+	.login {
+		color: dodgerblue;
+	}
+
+	.sign-up {
+		background: dodgerblue;
+	}
+
+	.fa-user {
+		margin-right: 10px;
+	}
+}
+
+// ========================
+.sub-header {
+	vertical-align: middle;
+	background: #4FC3F7;
+	padding: 10px 0 10px 12%;
+
+	.zSeAY {
+		fill: #fff;
+		border-radius: 50%;
+		padding: 5px;
+		border: 3px solid #fff;
+		background: dodgerblue;
+		margin-right: 20px;
+	}
+	
+	.sub-hdr-text {
+		width: 200px;
+		display: flex;
+		align-items: center;
+
+		.text {
+			font-size: 34px;
+			color: #fff;
+		}
+	}
+}
+
+.posts {
+		background: rgba(129, 212, 250, 0.2);
+		padding-top: 10px;
+
+	.post {
+		display: inline-block;
+		padding: 5px 10px;
+		border-bottom: 5px solid dodgerblue;
+		margin-left: 200px;
+	}
+}
+
+
+.menu-bar {
+	display: flex;
+	padding: 10px;
+	align-items: center;
+
+	.View {
+		margin-left: 300px;
+	}
+	.fas, .fab {
+		color: dodgerblue;
+		padding: 0 4px;
+	}
+	.sort {
+		margin-left: 20px;
+	}
+}
+
+// main section
+.main-sec {
+	background: rgba(213, 216, 220, 0.6);
+	padding: 40px 0;
+
+	.wrapper {
+		display: inline-block;
+		display: flex;
+		justify-content: center;
+
+
+		.Posts-sec {
+			display: grid;
+			grid-gap: 20px;
+			grid-auto-flow: row;
+			margin-right: 30px;
+			width: 50%;
+
+			.post-sec-header{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px 10px;
+				border-radius: 5px;
+				background: url(https://www.redditstatic.com/desktop2x/img/banner/banner-small@2x.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				.fa-reddit {
+					font-size: 40px;
+					padding: 0 10px;
+					color: #FF5733;
+				}
+				button {
+					display: block;
+					width: 150px;
+					color: #fff;
+					font-size: 14px;
+					border-radius: 3px;
+					background: dodgerblue;
+					padding: 8px 4px;
+				}
+			}
+
+			.post-hdr {
+				font-size: 30px;
+			}
+			
+			.cards {
+				display: flex;
+				background: #fff;
+				border-radius: 5px;
+				border: 1px solid rgba(0,0,0,0.2);
+				.left-sec-card {
+					background: #f3f3f3;
+					padding: 8px 15px 0 10px;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+
+					.score {
+						text-align: center;
+					}
+
+					.fas {
+						color: rgba(0,0,0,0.5);
+						font-weight: bolder;
+					}
+				}
+
+				.card {
+					padding: 10px 15px;
+					.title {
+						font-size: 26px;
+						padding-bottom: 10px;
+					}
+					.para {
+						font-size: 18px;
+					}
+
+					.Comments-sec {
+						margin-top: 20px;
+						display: flex;
+						align-items: center;
+
+						.fas {
+							color: rgba(0,0,0,0.5);
+							margin-right: 10px;
+						}
+
+						.two, .three, .four {
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+
+		.adds-sec {
+			width: 20%;
+			margin-top: 5px;
+
+			.comp-details {
+
+				h2 + p {
+					display: flex;
+					align-items: center;
+					padding: 12px;
+
+					span {
+						margin-left: 10px;
+					}
+				}
+
+				.zSeAY {
+					fill: #fff;
+					border-radius: 50%;
+					padding: 5px;
+					background: dodgerblue;
+				}
+
+				.subscribers {
+					display: flex;
+					padding: 20px 0;
+					.users {
+						font-size: 24px;
+						padding: 6px 0;
+						font-weight: bold;
+					}
+					.frist-child {
+						border-right: 1px solid #999;
+						padding: 0 40px 0 15px;
+						margin-right: 20px;
+					}			
+				}
+
+				button {
+					background: rgb(21, 101, 192);
+					color: #fff;
+					width: 90%;
+					border-radius: 3px;
+					margin-top: 10px;
+					margin-left: 5%;
+					text-transform: uppercase;
+					padding: 8px 0;
+					font-size: 14px;
+					font-weight: bold;
+				}
+			}
+
+			.card {
+				background: #fff;
+				border-radius: 5px;
+				margin-bottom: 20px;
+				padding: 0 0 20px 0;
+
+				h2{
+					background: rgb(21, 101, 192);
+					color: #fff;
+					font-size: 16px;
+					padding: 10px;
+					text-transform: uppercase;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+				}
+			}
+
+			.moderators {
+				h2 {
+					display: flex;
+					justify-content: space-between;
+				}
+
+				p {
+					padding: 5px 0;
+				}
+
+				a{
+					padding: 10px ;
+				}
+				.helpr-bot {
+					display: block;
+					padding-top: 10px; 
+				}
+
+				.view-mod {
+					margin-left: 150px;
+					margin-top: 20px;
+					border-radius: 3px;
+					color: dodgerblue;
+					font-size: 18px;
+				}
+			}
+		}
+
+		.Posts-sec,
+		.card {
+			border-radius: 5px;
+			padding: 6px 10px;
+		}
+	}
+
+	.copyright-sec {
+		padding: 10px 20px;
+		.terms {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
