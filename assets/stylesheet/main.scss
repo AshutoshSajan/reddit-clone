@@ -67,6 +67,19 @@ button, a {
 	cursor: pointer;
 }
 
+.error {
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+	color: transparent;
+	transition: all 400ms cubic-bezier(0.4, 0.72, 0.62, 1.5);
+}
+
+.true {
+	transform: translateY(40px);
+	color: red;
+}
+
 .primary-header {
 	padding: 10px 20px;
 	display: flex;
