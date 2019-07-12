@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+button, input {
+  border: 0;
+  outline: 0;
+  background: transparent; }
+
+a {
+  color: dodgerblue;
+  text-decoration: none; }
+
+button, a {
+  cursor: pointer; }
+
+.error {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: transparent;
+  transition: all 400ms cubic-bezier(0.4, 0.72, 0.62, 1.5); }
+
+.true {
+  transform: translateY(40px);
+  color: red; }
+
+.primary-header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .primary-header h1 {
+    font-size: 30px; }
+  .primary-header .fa-reddit {
+    padding: 0 10px;
+    color: #FF5733; }
+  .primary-header .Search-box {
+    border-radius: 5px;
+    border: 1px solid rgba(174, 182, 191, 0.2);
+    padding: 5px 8px;
+    width: 800px; }
+    .primary-header .Search-box .main-input {
+      padding-left: 10px;
+      font-size: 20px; }
+  .primary-header .Search-box:hover {
+    border-color: dodgerblue; }
+  .primary-header .small-srch-box {
+    display: flex;
+    padding: 0 5px;
+    border: 1px solid #fff;
+    align-items: center;
+    border-radius: 3px; }
+    .primary-header .small-srch-box .zSeAY {
+      fill: #fff;
+      border-radius: 50%;
+      padding: 5px;
+      border: 3px solid #fff;
+      background: dodgerblue; }
+    .primary-header .small-srch-box .input {
+      font-size: 20px;
+      color: #000; }
+    .primary-header .small-srch-box .input::-webkit-input-placeholder {
+      color: #000; }
+  .primary-header .small-srch-box:hover {
+    border-color: rgba(174, 182, 191, 0.2); }
+  .primary-header .btn {
+    padding: 5px 8px;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px; }
+  .primary-header .login {
+    color: dodgerblue; }
+  .primary-header .sign-up {
+    background: dodgerblue; }
+  .primary-header .fa-user {
+    margin-right: 10px; }
+
+.sub-header {
+  vertical-align: middle;
+  background: #4FC3F7;
+  padding: 10px 0 10px 12%; }
+  .sub-header .zSeAY {
+    fill: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid #fff;
+    background: dodgerblue;
+    margin-right: 20px; }
+  .sub-header .sub-hdr-text {
+    width: 200px;
+    display: flex;
+    align-items: center; }
+    .sub-header .sub-hdr-text .text {
+      font-size: 34px;
+      color: #fff; }
+
+.posts {
+  background: rgba(129, 212, 250, 0.2);
+  padding-top: 10px; }
+  .posts .post {
+    display: inline-block;
+    padding: 5px 10px;
+    border-bottom: 5px solid dodgerblue;
+    margin-left: 200px; }
+
+.menu-bar {
+  display: flex;
+  padding: 10px;
+  align-items: center; }
+  .menu-bar .View {
+    margin-left: 300px; }
+  .menu-bar .fas, .menu-bar .fab {
+    color: dodgerblue;
+    padding: 0 4px; }
+  .menu-bar .sort {
+    margin-left: 20px; }
+
+.main-sec {
+  background: rgba(213, 216, 220, 0.6);
+  padding: 40px 0; }
+  .main-sec .wrapper {
+    display: inline-block;
+    display: flex;
+    justify-content: center; }
+    .main-sec .wrapper .Posts-sec {
+      display: grid;
+      grid-gap: 20px;
+      grid-auto-flow: row;
+      margin-right: 30px;
+      width: 50%; }
+      .main-sec .wrapper .Posts-sec .post-sec-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+        border-radius: 5px;
+        background: url(https://www.redditstatic.com/desktop2x/img/banner/banner-small@2x.png);
+        background-repeat: no-repeat;
+        background-size: cover; }
+        .main-sec .wrapper .Posts-sec .post-sec-header .fa-reddit {
+          font-size: 40px;
+          padding: 0 10px;
+          color: #FF5733; }
+        .main-sec .wrapper .Posts-sec .post-sec-header button {
+          display: block;
+          width: 150px;
+          color: #fff;
+          font-size: 14px;
+          border-radius: 3px;
+          background: dodgerblue;
+          padding: 8px 4px; }
+      .main-sec .wrapper .Posts-sec .post-hdr {
+        font-size: 30px; }
+      .main-sec .wrapper .Posts-sec .cards {
+        display: flex;
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.2); }
+        .main-sec .wrapper .Posts-sec .cards .left-sec-card {
+          background: #f3f3f3;
+          padding: 8px 15px 0 10px;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px; }
+          .main-sec .wrapper .Posts-sec .cards .left-sec-card .score {
+            text-align: center; }
+          .main-sec .wrapper .Posts-sec .cards .left-sec-card .fas {
+            color: rgba(0, 0, 0, 0.5);
+            font-weight: bolder; }
+        .main-sec .wrapper .Posts-sec .cards .card {
+          padding: 10px 15px; }
+          .main-sec .wrapper .Posts-sec .cards .card .title {
+            font-size: 26px;
+            padding-bottom: 10px; }
+          .main-sec .wrapper .Posts-sec .cards .card .para {
+            font-size: 18px; }
+          .main-sec .wrapper .Posts-sec .cards .card .Comments-sec {
+            margin-top: 20px;
+            display: flex;
+            align-items: center; }
+            .main-sec .wrapper .Posts-sec .cards .card .Comments-sec .fas {
+              color: rgba(0, 0, 0, 0.5);
+              margin-right: 10px; }
+            .main-sec .wrapper .Posts-sec .cards .card .Comments-sec .two, .main-sec .wrapper .Posts-sec .cards .card .Comments-sec .three, .main-sec .wrapper .Posts-sec .cards .card .Comments-sec .four {
+              margin-left: 10px; }
+    .main-sec .wrapper .adds-sec {
+      width: 20%;
+      margin-top: 5px; }
+      .main-sec .wrapper .adds-sec .comp-details h2 + p {
+        display: flex;
+        align-items: center;
+        padding: 12px; }
+        .main-sec .wrapper .adds-sec .comp-details h2 + p span {
+          margin-left: 10px; }
+      .main-sec .wrapper .adds-sec .comp-details .zSeAY {
+        fill: #fff;
+        border-radius: 50%;
+        padding: 5px;
+        background: dodgerblue; }
+      .main-sec .wrapper .adds-sec .comp-details .subscribers {
+        display: flex;
+        padding: 20px 0; }
+        .main-sec .wrapper .adds-sec .comp-details .subscribers .users {
+          font-size: 24px;
+          padding: 6px 0;
+          font-weight: bold; }
+        .main-sec .wrapper .adds-sec .comp-details .subscribers .frist-child {
+          border-right: 1px solid #999;
+          padding: 0 40px 0 15px;
+          margin-right: 20px; }
+      .main-sec .wrapper .adds-sec .comp-details button {
+        background: #1565c0;
+        color: #fff;
+        width: 90%;
+        border-radius: 3px;
+        margin-top: 10px;
+        margin-left: 5%;
+        text-transform: uppercase;
+        padding: 8px 0;
+        font-size: 14px;
+        font-weight: bold; }
+      .main-sec .wrapper .adds-sec .card {
+        background: #fff;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 0 0 20px 0; }
+        .main-sec .wrapper .adds-sec .card h2 {
+          background: #1565c0;
+          color: #fff;
+          font-size: 16px;
+          padding: 10px;
+          text-transform: uppercase;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px; }
+      .main-sec .wrapper .adds-sec .moderators h2 {
+        display: flex;
+        justify-content: space-between; }
+      .main-sec .wrapper .adds-sec .moderators p {
+        padding: 5px 0; }
+      .main-sec .wrapper .adds-sec .moderators a {
+        padding: 10px; }
+      .main-sec .wrapper .adds-sec .moderators .helpr-bot {
+        display: block;
+        padding-top: 10px; }
+      .main-sec .wrapper .adds-sec .moderators .view-mod {
+        margin-left: 150px;
+        margin-top: 20px;
+        border-radius: 3px;
+        color: dodgerblue;
+        font-size: 18px; }
+    .main-sec .wrapper .Posts-sec,
+    .main-sec .wrapper .card {
+      border-radius: 5px;
+      padding: 6px 10px; }
+  .main-sec .copyright-sec {
+    color: #000; }
+    .main-sec .copyright-sec .terms {
+      display: flex;
+      padding: 10px;
+      justify-content: space-between; }
+      .main-sec .copyright-sec .terms div {
+        margin: 10px; }
+      .main-sec .copyright-sec .terms a {
+        color: #000;
+        display: inline-block;
+        margin: 5px 0; }
+    .main-sec .copyright-sec .copyright {
+      padding: 10px; }
+      .main-sec .copyright-sec .copyright p {
+        padding: 0 0 10px 0; }
+
+/*# sourceMappingURL=main.css.map */
