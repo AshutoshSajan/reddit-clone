@@ -420,10 +420,52 @@ button, a {
 	}
 
 	.copyright-sec {
-		padding: 10px 20px;
+		color: #000;
 		.terms {
 			display: flex;
+			padding: 10px;
 			justify-content: space-between;
+			div {
+				margin: 10px;
+			}
+
+			a {
+				color: #000;
+				display: inline-block;
+				margin: 5px 0;
+			}
+		}
+
+		.copyright {
+			padding: 10px;
+			p {
+				padding: 0 0 10px 0;
+			}
 		}
 	}
 }
+
+// flexbox experiment
+// .test {
+// 	display: flex;
+// 	width: 100vw;
+// 	flex-direction: row-reverse;
+// 	.check {
+// 		height: 300px;
+// 		width: 300px;
+// 	}
+// 	.one{
+// 		background: red;
+// 	}
+// 	.two{
+// 		background: green; 
+// 	}
+// 	.three{
+// 		background: blue;
+// 	}
+// }
+
+//http://data.undp.org/resource/myer-egms.json
+
+// unsplash api
+//fetch("https://api.unsplash.com/photos/?client_id=CLIENT_ID").then(r=>r.json()).then(d => a.push(d));
