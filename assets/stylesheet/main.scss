@@ -468,4 +468,4 @@ button, a {
 //http://data.undp.org/resource/myer-egms.json
 
 // unsplash api
-//fetch("https://api.unsplash.com/photos/?client_id=94eefc493013f829aa2a14ce2ec9b443781a11ea9c1fde12c007a9d0cf817598").then(r=>r.json()).then(d => a.push(d));
+//fetch("https://api.unsplash.com/photos/?client_id=CLIENT_ID").then(r=>r.json()).then(d => a.push(d));
